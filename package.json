@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "lerna run dev --stream --parallel",
+    "dev": "yarn workspaces foreach -vip run dev",
     "lint": "lerna run lint",
     "prepare": "husky install",
     "clean:update": "lerna clean && lerna bootstrap"
